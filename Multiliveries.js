@@ -76,7 +76,7 @@ window.addEventListener('message', function(e) {
 console.log("Loading...");
 
 
- await fetch("https://raw.githubusercontent.com/Spice9/Geofs-Multiliveries/main/dependencies/liveries.json")
+ await fetch("https://shivampai.github.io/Geofs-Multiliveries/dependencies/liveries.json")
  .then(res => res.json())
  .then(data => livObj = data) 
 
@@ -146,7 +146,7 @@ updateMultiplayer();
 
 console.log("Loaded!");
 
-await fetch("https://raw.githubusercontent.com/Spice9/Geofs-Multiliveries/main/dependencies/contributors.txt")
+await fetch("https://shivampai.github.io/Geofs-Multiliveries/dependencies/contributors.txt")
 .then(res => res.json())
  .then(data => contributors = data)
 
