@@ -69,14 +69,14 @@ function changeLivery(livery) {
 
 window.addEventListener('message', function(e) {
   if (debug) console.log("Event Recieved: " + e);
-  if (e.origin !== "https://mlui2.ariakimtaiyo.repl.co") return;
+  if (e.origin !== "https://7bf7b797-e8d4-42e2-8d74-2f7050eafd3d-00-2qccycf3xbv7i.picard.replit.dev") return;
 	changeLivery(e.data);
 } , false);
 
 console.log("Loading...");
 
 
- await fetch("https://shivampai.github.io/Geofs-Multiliveries/dependencies/liveries.json")
+ await fetch("https://raw.githubusercontent.com/Spice9/Geofs-Multiliveries/main/dependencies/liveries.json")
  .then(res => res.json())
  .then(data => livObj = data) 
 
@@ -90,7 +90,7 @@ buttonDiv.addEventListener("click", function() {
     if (debug) console.log("Duplicate open attempt"); 
     return;
   }
-   mlui = window.open("https://mlUI2.ariakimtaiyo.repl.co", "_blank", "height=1000,width=1500");
+   mlui = window.open("https://7bf7b797-e8d4-42e2-8d74-2f7050eafd3d-00-2qccycf3xbv7i.picard.replit.dev", "_blank", "height=1000,width=1500");
   opened = true;
   if(!mlui || mlui.closed || typeof mlui.closed=='undefined') 
 { 
@@ -146,7 +146,7 @@ updateMultiplayer();
 
 console.log("Loaded!");
 
-await fetch("https://raw.githubusercontent.com/shivampai/Geofs-Multiliveries/main/dependencies/contributors.txt")
+await fetch("https://raw.githubusercontent.com/Spice9/Geofs-Multiliveries/main/dependencies/contributors.txt")
 .then(res => res.json())
  .then(data => contributors = data)
 
